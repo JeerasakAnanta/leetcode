@@ -11,8 +11,8 @@ class Solution:
             if complement in num_to_index:
                 return [num_to_index[complement], index]  # Found the solution
             # If not found, store the current number with its index
+        return []  # In a valid input, we shouldn't reach here since there is exactly one solution
             num_to_index[num] = index
-        return []  # In a valid input, we shouldn't reach here since there is exactly one solution           
 
 # Example usage
 solution = Solution()
